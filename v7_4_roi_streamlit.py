@@ -5,6 +5,7 @@ import numpy as np
 import pandas as pd
 import plotly.graph_objects as go
 import urllib.request
+import os
 
 MODEL_URL = "https://drive.google.com/uc?export=download&id=1pZ_vFRfqx1mw1RpoMR_fanrrOvHHMDiN"
 MODEL_LOCAL_PATH = "v6_1_water_model_boosted.pkl"
