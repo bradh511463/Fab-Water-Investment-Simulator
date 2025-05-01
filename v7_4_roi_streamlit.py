@@ -4,6 +4,16 @@ import joblib
 import numpy as np
 import pandas as pd
 import plotly.graph_objects as go
+import urllib.request
+
+MODEL_URL = "https://drive.google.com/uc?export=download&id=1pZ_vFRfqx1mw1RpoMR_fanrrOvHHMDiN"
+MODEL_LOCAL_PATH = "v6_1_water_model_boosted.pkl"
+
+# Download the model if not already present
+if not os.path.exists(MODEL_LOCAL_PATH):
+    urllib.request.urlretrieve(MODEL_URL, MODEL_LOCAL_PATH)
+
+model = joblib.load(MODEL_LOCAL_PATH)
 
 # === LOAD MODELS ===
 @st.cache_resource
