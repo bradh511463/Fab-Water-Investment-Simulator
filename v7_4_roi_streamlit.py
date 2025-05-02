@@ -265,7 +265,7 @@ def display_roi_module(wafer_intention, year, rec, mon, zld, eff_level, wafer_si
        "Adjusted Profit": "Profit + Dollar Value of Water Saved",
        "ROI (Water-Aligned)": "(Adjusted Profit ÷ (Investment × $10,000)) × 100",
        "Gallons Saved": "(Baseline Water − Predicted Efficiency) × Annual Wafers",
-       "Dollar Value of Water Saved": "Gallons Saved × $0.10",  # ← update here if $0.10 is used
+       "Dollar Value of Water Saved": "Gallons Saved × $0.004",  # ← update here if $0.10 is used
        "Composite Score": "(ROI + Efficiency Score) ÷ 2"
        }
 
