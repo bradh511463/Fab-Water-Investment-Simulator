@@ -4,3 +4,4 @@ numpy
 joblib
 gdown
 plotly
+sklearn
