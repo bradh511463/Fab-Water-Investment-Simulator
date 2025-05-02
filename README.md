@@ -53,10 +53,10 @@ Also outline on requirements.txt.
 
 # Installation and Run
 '''bash
-git clone https://github.com/bradh511463/Fab-Water-Investment-Simulator.git
-cd Fab-Water-Investment-Simulator
-pip install -r requirements.txt
-streamlit run v7_1_streamlit.py
+- git clone https://github.com/bradh511463/Fab-Water-Investment-Simulator.git
+- cd Fab-Water-Investment-Simulator
+- pip install -r requirements.txt
+- streamlit run v7_1_streamlit.py
 
 
 # Google Drive Link
