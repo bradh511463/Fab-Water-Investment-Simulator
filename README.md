@@ -35,6 +35,7 @@ This project was built to help evaluate the tradeoffs between Water Investment f
 - revenue_multiplier_model.pkl 
 ## Downloaded at runtime
 - v6_1_water_model_boosted.pkl  # Downloaded at runtime
+- Is **not** stored in Github; it auto-downloads ar runtime via Google Drive.
 ## Python dependencies
 - requirements.txt           
 ## This file
@@ -64,7 +65,10 @@ The water-model (v6_1_water_model_boosted.pkl) is hosted externally—if you nee
 https://drive.google.com/file/d/1pZ_vFRfqx1mw1RpoMR_fanrrOvHHMDiN/view?usp=sharing
 
 # Deployment on Streamlit
-Deploy on Streamlit Cloud (select repo, set main file to v7_1_streamlit.py).
+1. Go to Streamlit Community Cloud
+2. Create a new app from bradh511463/Fab-Water-Investment-Simulator
+3. Set Main file to v7_1_streamlit.py
+4. Click Deploy
 
 # Troubleshooting & FAQ
 
