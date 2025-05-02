@@ -1,5 +1,19 @@
 # Fab-Water-Investment-Simulator
 
+## Table of Contents
+- [What It Is](#what-it-is)
+- [Features](#features)
+- [File Structure](#file-structure)
+- [Dependencies](#dependencies)
+- [Installation & Run](#installation--run)
+- [Usage / Demo](#usage--demo)
+- [Configuration](#configuration)
+- [Google Drive Model](#google-drive-model)
+- [Deployment](#deployment)
+- [Troubleshooting & FAQ](#troubleshooting--faq)
+- [Contributing & License](#contributing--license)
+- [Author & Contact](#author--contact)
+
 ## What it is:
 This project was built to help evaluate the tradeoffs between Water Investment for Wafer Fabrications centers to their ultimate financial goals. Can alignment exist where because of the investments made that fabrication centers become more profitable?  To answer that question the goal was to develop an interactive decision-support dashboard that models this systemic relationship. Rather than merely optimizing for cost or water savings, the system enables users to explore the dynamic trade-offs between investment in water-efficient technologies and financial outcomes delivering both business rationale and sustainability alignment
 
@@ -26,10 +40,7 @@ This project was built to help evaluate the tradeoffs between Water Investment f
 ## This file
 -  README.md                
 
-# Dependancies
-Please refer to requirements.txt 
-
-List:
+# Dependencies
 - streamlit
 - pandas
 - numpy
@@ -38,7 +49,7 @@ List:
 - plotly
 - scikit-learn
 
-
+Also outline on requirements.txt. 
 
 # Installation and Run
 '''bash
