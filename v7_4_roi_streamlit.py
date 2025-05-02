@@ -1,5 +1,6 @@
 # === V7_4_ROI_STREAMLIT.PY (FULLY CORRECTED VERSION) ===
 import streamlit as st
+import sklearn
 import joblib
 import numpy as np
 import pandas as pd
