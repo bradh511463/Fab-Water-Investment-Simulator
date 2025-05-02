@@ -229,6 +229,7 @@ def display_roi_module(wafer_intention, year, rec, mon, zld, eff_level, wafer_si
     st.markdown("""<h2 style='font-size:26px;'>Predicted ROI Breakdown</h2>""", unsafe_allow_html=True)
 
     # Convert to desired units
+    gallons_bil     = gal_saved_y / 1_000_000_000
     revenue_bil     = revenue / 1_000_000_000
     profit_bil      = profit  / 1_000_000_000
     investment_mil  = (total_investment * 10_000) / 1_000_000  # rec+mon+zld in 10k units → dollars → millions
