@@ -21,6 +21,16 @@ This project was built to help evaluate the tradeoffs between Water Investment f
 └── README.md                  # This file
 
 ## Dependancies
+Please refer to requirements.txt 
+
+List:
+- streamlit
+- pandas
+- numpy
+- joblib
+- gdown
+- plotly
+- scikit-learn
 
 
 
