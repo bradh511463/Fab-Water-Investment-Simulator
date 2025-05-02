@@ -12,13 +12,13 @@ This project was built to help evaluate the tradeoffs between Water Investment f
 
 ## File Structure
 .
-├── v7_1_streamlit.py          # Main launcher
-├── v7_4_roi_streamlit.py      # ROI logic & metrics
-├── v7_3_cas_st.py             # CAS flow visualization module
-├── revenue_multiplier_model.pkl
-├── v6_1_water_model_boosted.pkl  # Downloaded at runtime
-├── requirements.txt           # Python dependencies
-└── README.md                  # This file
+- v7_1_streamlit.py          # Main launcher
+- v7_4_roi_streamlit.py      # ROI logic & metrics
+- v7_3_cas_st.py             # CAS flow visualization module
+- revenue_multiplier_model.pkl # ML Model for Wafer Intention Multiplier effect on revenue
+- v6_1_water_model_boosted.pkl  # Downloaded at runtime
+- requirements.txt           # Python dependencies
+-  README.md                  # This file
 
 ## Dependancies
 Please refer to requirements.txt 
