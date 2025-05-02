@@ -228,17 +228,20 @@ def display_roi_module(wafer_intention, year, rec, mon, zld, eff_level, wafer_si
     # === Display Metrics ===
     st.markdown("""<h2 style='font-size:26px;'>Predicted ROI Breakdown</h2>""", unsafe_allow_html=True)
 
-    # Set up 6 equal columns (you had a typo with [6])
-    col1, col2, col3, col4, col5, col6 = st.columns(6)
+    # Convert to desired units
+    revenue_bil     = revenue / 1_000_000_000
+    profit_bil      = profit  / 1_000_000_000
+    investment_mil  = (total_investment * 10_000) / 1_000_000  # rec+mon+zld in 10k units → dollars → millions
 
-    # Fill them in properly
-    col1.metric("Gallons Saved (B)", f"{gallons_bil:.3f}B gallons", delta=f"{gallon_delta:,.0f} gal")
-    col2.metric("ROI from Water Investment", f"{roi:.2f}%")
-    col3.metric(f"Total Revenue {year}", f"${revenue:,.0f}")
-    col4.metric(f"Total Profit {year}", f"${profit:,.0f}")
-    col5.metric(f"Total Investment {year}", f"${total_investment * 10000:,.0f}")
-    col6.metric("Composite Score", f"{composite_score:.2f}")
- 
+    # Set up 6 equal columns
+    col1, col2, col3, col4, col5, col6 = st.columns(6)
+    col1.metric("Gallons Saved (B)",          f"{gallons_bil:.3f}B")
+    col2.metric("ROI from Water Investment",  f"{roi:.2f}%")
+    col3.metric(f"Total Revenue {year}",      f"${revenue_bil:.3f}B")
+    col4.metric(f"Total Profit {year}",       f"${profit_bil:.3f}B")
+    col5.metric(f"Total Investment {year}",   f"${investment_mil:.3f}M")
+    col6.metric("Composite Score",            f"{composite_score:.2f}")
+
     st.markdown("""<h2 style='font-size:26px;'>Scenario Summary</h2>""", unsafe_allow_html=True)
 
     st.markdown(f"""
