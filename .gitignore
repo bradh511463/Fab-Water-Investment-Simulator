@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+
+# Virtual envs
+venv/
+.env/
+
+# Streamlit cache
+.streamlit/
+
+# macOS
+.DS_Store
+
+# Large ML models (downloaded at runtime)
+v6_1_water_model_boosted.pkl
