@@ -55,6 +55,15 @@ https://drive.google.com/file/d/1pZ_vFRfqx1mw1RpoMR_fanrrOvHHMDiN/view?usp=shari
 ## Deployment on Streamlit
 Deploy on Streamlit Cloud (select repo, set main file to v7_1_streamlit.py).
 
+## Troubleshooting & FAQ
+
+**Q:** I get “ModuleNotFoundError: sklearn”  
+**A:** Run `pip install -r requirements.txt`, then `streamlit cache clear`.
+
+**Q:** Model download hangs / 403 error  
+**A:** Make sure your `MODEL_URL` is set to a public “uc?id=…” link.
+
+
 
 ## Contributing & License
 Feedback is always welcomed. Please reach out to bllarso2@asu.edu if running into any issues. 
